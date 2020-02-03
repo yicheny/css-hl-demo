@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bfc2</title>
+</head>
+<style>
+    .box-wrap{
+        background: gray;
+        border: 1px solid black;
+    }
+    .img-box{
+        float:left;
+        margin-right:2%;
+        width:30%;
+        height:100px;
+        background: gold;
+    }
+    .text-box {
+        overflow: auto;
+        /*float: right; !*脱离文档流，高度塌陷*!*/
+        /*display: inline-block; !*以块为单位水平排布*!*/
+        /*position: absolute;!*脱离文档流，高度塌陷*!*/
+    }
+</style>
+<body>
+<div class="box-wrap">
+    <div class="img-box"></div>
+    <div class="text-box">
+        <h3>标题</h3>
+        <p>文本描述文本描述文本描述文本描述文本描述文本描述文本描述文本描述文本描述文本描述文本描述文本描述</p>
+    </div>
+</div>
+</body>
+</html>
